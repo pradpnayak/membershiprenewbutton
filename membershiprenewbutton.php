@@ -15,15 +15,6 @@ function membershiprenewbutton_civicrm_config(&$config) {
 }
 
 /**
- * Implements hook_civicrm_xmlMenu().
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_xmlMenu
- */
-function membershiprenewbutton_civicrm_xmlMenu(&$files) {
-  _membershiprenewbutton_civix_civicrm_xmlMenu($files);
-}
-
-/**
  * Implements hook_civicrm_install().
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_install
@@ -33,114 +24,12 @@ function membershiprenewbutton_civicrm_install() {
 }
 
 /**
- * Implements hook_civicrm_postInstall().
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_postInstall
- */
-function membershiprenewbutton_civicrm_postInstall() {
-  _membershiprenewbutton_civix_civicrm_postInstall();
-}
-
-/**
- * Implements hook_civicrm_uninstall().
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_uninstall
- */
-function membershiprenewbutton_civicrm_uninstall() {
-  _membershiprenewbutton_civix_civicrm_uninstall();
-}
-
-/**
  * Implements hook_civicrm_enable().
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_enable
  */
 function membershiprenewbutton_civicrm_enable() {
   _membershiprenewbutton_civix_civicrm_enable();
-}
-
-/**
- * Implements hook_civicrm_disable().
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_disable
- */
-function membershiprenewbutton_civicrm_disable() {
-  _membershiprenewbutton_civix_civicrm_disable();
-}
-
-/**
- * Implements hook_civicrm_upgrade().
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_upgrade
- */
-function membershiprenewbutton_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) {
-  return _membershiprenewbutton_civix_civicrm_upgrade($op, $queue);
-}
-
-/**
- * Implements hook_civicrm_managed().
- *
- * Generate a list of entities to create/deactivate/delete when this module
- * is installed, disabled, uninstalled.
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_managed
- */
-function membershiprenewbutton_civicrm_managed(&$entities) {
-  _membershiprenewbutton_civix_civicrm_managed($entities);
-}
-
-/**
- * Implements hook_civicrm_caseTypes().
- *
- * Generate a list of case-types.
- *
- * Note: This hook only runs in CiviCRM 4.4+.
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_caseTypes
- */
-function membershiprenewbutton_civicrm_caseTypes(&$caseTypes) {
-  _membershiprenewbutton_civix_civicrm_caseTypes($caseTypes);
-}
-
-/**
- * Implements hook_civicrm_angularModules().
- *
- * Generate a list of Angular modules.
- *
- * Note: This hook only runs in CiviCRM 4.5+. It may
- * use features only available in v4.6+.
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_angularModules
- */
-function membershiprenewbutton_civicrm_angularModules(&$angularModules) {
-  _membershiprenewbutton_civix_civicrm_angularModules($angularModules);
-}
-
-/**
- * Implements hook_civicrm_alterSettingsFolders().
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_alterSettingsFolders
- */
-function membershiprenewbutton_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
-  _membershiprenewbutton_civix_civicrm_alterSettingsFolders($metaDataFolders);
-}
-
-/**
- * Implements hook_civicrm_entityTypes().
- *
- * Declare entity types provided by this module.
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_entityTypes
- */
-function membershiprenewbutton_civicrm_entityTypes(&$entityTypes) {
-  _membershiprenewbutton_civix_civicrm_entityTypes($entityTypes);
-}
-
-/**
- * Implements hook_civicrm_themes().
- */
-function membershiprenewbutton_civicrm_themes(&$themes) {
-  _membershiprenewbutton_civix_civicrm_themes($themes);
 }
 
 /**
@@ -195,7 +84,6 @@ function membershiprenewbutton_civicrm_buildForm($formName, &$form) {
     $form->assign('fields', $form->getVar('settingsMetadata'));
   }
 }
-
 
 /**
  * Implements hook_civicrm_pageRun().

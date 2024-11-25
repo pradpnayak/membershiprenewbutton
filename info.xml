@@ -18,7 +18,7 @@
   <version>1.0</version>
   <develStage>stable</develStage>
   <compatibility>
-    <ver>5.35</ver>
+    <ver>5.45</ver>
   </compatibility>
   <comments>This is a new, undeveloped module</comments>
   <classloader>
@@ -26,5 +26,9 @@
   </classloader>
   <civix>
     <namespace>CRM/MembershipRenewButton</namespace>
+    <format>24.09.1</format>
   </civix>
+  <mixins>
+    <mixin>entity-types-php@2.0.0</mixin>
+  </mixins>
 </extension>
